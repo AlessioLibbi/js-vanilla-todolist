@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="todo-list-container">
+            <div class="header-input">
+                <h1>TODO LIST</h1>
+                <form class="form" action="index.html" method="GET">
+                    <input name="todo" id="todo" placeholder="Qui devi inserirre il todo" type="text">
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+            <div class="todo-list">
+                <h1>LIST OF WORK TO DO</h1>
+                <ul id="todo-listed">
+                  <!-- <<--QUI CE L INSERIMENO DEGLI ELEMENTI-->
+                    
+                </ul>
+            </div>
+            <div class="counter-container">
+        
+                <div class="toCheckCounter">
+                    Completate <span id="completed-tasks"></span> su <span id="total-tasks"></span>
+                </div>
+            </div>
+        </div>
+        
+
+    
+      
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
