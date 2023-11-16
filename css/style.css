@@ -31,15 +31,33 @@ body {
     background-color: #626D74;
 }
 
+
+
 .todo-list {
 
     background-color: #626D74;
     color: #BEA6A0;
     height: 400px;
-    overflow-y: scroll;
+   
+    -ms-overflow-style: none;
     display: flex;
     flex-direction: column;
     text-align: center;
+    overflow-y: scroll;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    position: relative;
+}
+
+.todo-list::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+.h1 {
+   position: sticky;
+   top: 10px;
+   
+    
 }
 
 .todo-listed {
@@ -48,11 +66,12 @@ body {
 
 ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0 20%;
 }
 
 ul li {
     padding: 0;
+    background-color: #3E3E3E;
 }
 
 .todo-text {
@@ -65,16 +84,20 @@ ul li {
     margin-right: 11px;
 }
 
+
+
 .delete {
-    color: red !important;
+    color: #99BDB1 !important;
     cursor: pointer;
     margin-left: 350px;
     padding-right: 20px;
+    font-size: 18px;
 
 }
 
 .fa-check {
-    color: green !important;
+    color: #99BDB1 !important;
+    font-size: 18px;
 
     cursor: pointer;
 }
@@ -84,15 +107,34 @@ ul li {
     display: flex;
     justify-content: space-between;
     padding: 8px 10px;
+    position: relative;
+    height: 60px;
 
+}
+.urgent-todo {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+    background-color: red;
+    height: 60px;
 }
 
 .checked {
-    background-color: #05FFFF;
-    border: 1px solid greenyellow;
+    background-color: #6C5869;
+    border: 1px solid #AD707F;
 }
 
 .checked i.fa-check {
     display: none;
 
+}
+
+.limit-message {
+    position: absolute;
+    left: 730px;
+}
+#data-eng {
+    position: absolute;
+    bottom: -20px;
 }

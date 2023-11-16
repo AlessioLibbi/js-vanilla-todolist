@@ -14,12 +14,17 @@
             <div class="header-input">
                 <h1>TODO LIST</h1>
                 <form class="form" action="index.html" method="GET">
-                    <input name="todo" id="todo" placeholder="Qui devi inserirre il todo" type="text">
-                    <button type="submit">Add</button>
+                    <input onkeydown="validate(this);" onkeyup="validate(this);" name="todo" id="todo" placeholder="Qui devi inserirre il todo" type="text">
+                    <input type="date" name="todo-date" id="todo-date">
+                    <p class="limit-message" id="validate-message"></p>
+                    <button  type="submit">Add</button>
                 </form>
+                <div class="my-5">
+                    <h1>LIST OF WORK TO DO</h1>
+                </div>
             </div>
             <div class="todo-list">
-                <h1>LIST OF WORK TO DO</h1>
+                
                 <ul id="todo-listed">
                   <!-- <<--QUI CE L INSERIMENO DEGLI ELEMENTI-->
                     
